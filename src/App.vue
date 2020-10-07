@@ -2,17 +2,20 @@
 <div>
   <Main/>
   <Form/>
+  <Footer/>
 </div>
 </template>
 
 <script>
 import Main from './components/Main.vue'
 import Form from './components/Form.vue'
+import Footer from './views/Footer.vue'
 
 export default {
   components: {
     Main,
-    Form
+    Form,
+    Footer
   }
 }
 </script>
