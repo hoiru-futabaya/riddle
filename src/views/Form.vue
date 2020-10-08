@@ -2,6 +2,7 @@
   <div id="AnswerForm">
     <div>
       <div>
+        <p>【{{ this.$route.path }}】</p>
         <input class="input" id="answer">
         <input @click="getAnswer" type="button" value="enter">
         <p v-if="answer === result">Success!</p>

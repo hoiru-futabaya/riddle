@@ -16,7 +16,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/:questionNo', // このパスにアクセスしたら
+      path: '/', // このパスにアクセスしたら
       name: 'Main',
       component: Main // このコンポーネントを呼ぶ
     },
