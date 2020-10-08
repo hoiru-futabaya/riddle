@@ -5,7 +5,7 @@ import Main from '@/views/Main.vue'
 import Page1 from '@/views/1.vue'
 import Page2 from '@/views/2.vue'
 import Page3 from '@/views/3.vue'
-import Page4 from '@/views/5.vue'
+import Page4 from '@/views/4.vue'
 import Page5 from '@/views/5.vue'
 import Goal from '@/views/Goal.vue'
 
@@ -16,7 +16,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/:questionNo',      // このパスにアクセスしたら
+      path: '/:questionNo', // このパスにアクセスしたら
       name: 'Main',
       component: Main // このコンポーネントを呼ぶ
     },
