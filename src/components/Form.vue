@@ -2,7 +2,6 @@
   <div id="AnswerForm">
     <div>
       <div>
-        <p>【{{ this.$route.path }}】</p>
         <input class="input" id="answer">
         <input @click="getAnswer" type="button" value="enter">
         <p v-if="answer === result">Success!</p>
@@ -19,6 +18,7 @@ export default {
   data () {
     return {
       title: 'Form',
+      questionNo: '',
       answer: ' ',
       result: ''
     }
@@ -28,8 +28,12 @@ export default {
       this.axios.get('https://script.google.com/macros/s/AKfycbwJixS3l4KZDubUiU5jHDFNL11YaYxB9fngPUDI5b6MHeQJQA8/exec')
         .then((response) => {
           this.answer = document.getElementById('answer').value
-          var questionNo = this.$route.path.replace(/\//g, '')
-          var result = JSON.stringify(response.data[questionNo].answer)
+          if (this.$route.path === '/') {
+            this.questionNo = 0
+          } else {
+            this.questionNo = this.$route.path.replace(/\//g, '')
+          }
+          var result = JSON.stringify(response.data[this.questionNo].answer)
           this.result = result.replace(/"/g, '')
         })
         .catch((e) => {
