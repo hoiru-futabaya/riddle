@@ -6,7 +6,7 @@
     <router-link to="/3">3</router-link>|
     <router-link to="/4">4</router-link>|
     <router-link to="/5">5</router-link>|
-    <router-link to="/Goal">ゴール</router-link>
+    <router-link to="/6">ゴール</router-link>
   </div>
 </template>
 

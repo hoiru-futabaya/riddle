@@ -1,7 +1,7 @@
 <template>
   <div id="AnswerForm">
     <div>
-      <div>
+      <div v-if="this.$route.path !== '/6'">
         <input class="input" id="answer">
         <input @click="getAnswer" type="button" value="enter">
         <p v-if="answer === result">Success!</p>
@@ -35,6 +35,9 @@ export default {
           }
           var result = JSON.stringify(response.data[this.questionNo].answer)
           this.result = result.replace(/"/g, '')
+          if (this.answer === this.result) {
+            location.href = Number(this.questionNo) + 1
+          }
         })
         .catch((e) => {
           alert(e)
