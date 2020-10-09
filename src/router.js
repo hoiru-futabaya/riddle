@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // コンポーネントを読み込む
-import Main from '@/views/Main.vue'
-import Page1 from '@/views/1.vue'
-import Page2 from '@/views/2.vue'
-import Page3 from '@/views/3.vue'
-import Page4 from '@/views/4.vue'
-import Page5 from '@/views/5.vue'
-import Goal from '@/views/Goal.vue'
+import Main from '@/components/Main.vue'
+import Page1 from '@/components/1.vue'
+import Page2 from '@/components/2.vue'
+import Page3 from '@/components/3.vue'
+import Page4 from '@/components/4.vue'
+import Page5 from '@/components/5.vue'
+import Goal from '@/components/Goal.vue'
 
 Vue.use(Router)
 
