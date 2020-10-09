@@ -3,14 +3,19 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios' // 追記
 import VueAxios from 'vue-axios' // 追記
-import cookie from './plugins/cookie'
+import VueCookies from 'vue-cookies'
 
 Vue.config.productionTip = false
+Vue.use(VueAxios, axios) // 追記
+Vue.use(VueCookies)
+// set default config
+Vue.$cookies.config('7d')
 
-Vue.use(VueAxios, axios, cookie) // 追記
+// set global cookie
+Vue.$cookies.set('theme', 'default')
+Vue.$cookies.set('hover-time', '1s')
 
 new Vue({
   router,
-  cookie,
   render: h => h(App)
 }).$mount('#app')

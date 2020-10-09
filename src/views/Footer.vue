@@ -7,12 +7,19 @@
     <router-link to="/4">4</router-link>|
     <router-link to="/5">5</router-link>|
     <router-link to="/6">ゴール</router-link>
+    <h3>現在{{ this.$cookies.get('kokomade') }}問目までクリア</h3>
+    <input @click="resetCookies" type="button" value="Cookieをリセット">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  methods: {
+    resetCookies () {
+      this.$cookies.remove('kokomade')
+    }
+  }
 }
 </script>
 

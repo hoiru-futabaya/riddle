@@ -20,7 +20,8 @@ export default {
       title: 'Form',
       questionNo: '',
       answer: ' ',
-      result: ''
+      result: '',
+      kokomade: Number(this.$cookies.get('kokomade'))
     }
   },
   methods: {
@@ -37,6 +38,9 @@ export default {
           this.result = result.replace(/"/g, '')
           if (this.answer === this.result) {
             location.href = Number(this.questionNo) + 1
+            if (this.kokomade < Number(this.questionNo)) {
+              this.$cookies.set('kokomade', Number(this.questionNo))
+            }
           }
         })
         .catch((e) => {
