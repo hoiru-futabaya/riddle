@@ -15,6 +15,11 @@ Vue.$cookies.config('7d')
 Vue.$cookies.set('theme', 'default')
 Vue.$cookies.set('hover-time', '1s')
 
+if (!Vue.$cookies.isKey('kokomade')) {
+  Vue.$cookies.set('kokomade', -1)
+  alert('Cookie初回セット')
+}
+
 new Vue({
   router,
   render: h => h(App)
