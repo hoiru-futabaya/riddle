@@ -2,6 +2,7 @@
   <div id="AnswerForm">
     <div>
       <div v-if="this.$route.path !== '/6'">
+        <p id="text">半角英数小文字で入力</p>
         <input class="input" id="answer">
         <input @click="getAnswer" type="button" value="enter">
         <p v-if="answer === result">Success!</p>

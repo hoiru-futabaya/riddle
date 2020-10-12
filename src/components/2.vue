@@ -1,9 +1,9 @@
 <template>
   <div id="main">
     <h2 id="title">
-    2
+    ２問目
     </h2>
-    ここに問題を表示
+    猿がカリウムを失うと何になる？
   </div>
 </template>
 

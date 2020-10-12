@@ -1,9 +1,10 @@
 <template>
   <div id="main">
     <h2 id="title">
-    3
+    ３問目
     </h2>
-    ここに問題を表示
+    <p id="text">だれ？（アルファベット6文字）</p>
+    <img src="@/views/3.png" style="img { height: 250px; width: 150px; }">
   </div>
 </template>
 

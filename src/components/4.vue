@@ -1,9 +1,10 @@
 <template>
   <div id="main">
     <h2 id="title">
-    4
+    ４問目
     </h2>
-    ここに問題を表示
+    <p id="text">どこ？</p>
+    <img src="@/views/4.png">
   </div>
 </template>
 
@@ -14,4 +15,7 @@ export default {
 </script>
 
 <style>
+img {
+  width: 80%;
+}
 </style>

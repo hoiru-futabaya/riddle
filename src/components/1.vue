@@ -1,9 +1,9 @@
 <template>
   <div id="main">
     <h2 id="title">
-    1
+    １問目
     </h2>
-    ここに問題を表示
+    <p id="text">1, 3, 5, 7, 【?】, 11, 13, …</p>
   </div>
 </template>
 
