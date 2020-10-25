@@ -8,6 +8,7 @@
     </h3>
     <p id="text">JavaScriptのフレームワークであるVue.jsの勉強用に作りました。</p>
     <p id="text">riddle（なぞなぞ）+Vue.jsでりどびゅー！です（笑）</p>
+    <p id="text">ソースを見たりツールを使う場面はありません。</p>
     <p id="text">入力フォームに正しい答えを入力すると次の問題に進めます。</p>
     <p id="text">まずは「start」と入力してスタート！</p>
   </div>

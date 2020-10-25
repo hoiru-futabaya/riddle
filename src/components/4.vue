@@ -4,7 +4,7 @@
     ４問目
     </h2>
     <p id="text">どこ？</p>
-    <img src="@/views/4.png">
+    <img src="@/views/4.png" title="手書きですみません(；´Д｀)">
   </div>
 </template>
 
