@@ -21,32 +21,32 @@ export default new Router({
       component: Main // このコンポーネントを呼ぶ
     },
     {
-      path: '/1',
+      path: '/teOr2X',
       name: 'Page1',
       component: Page1
     },
     {
-      path: '/2',
+      path: '/CRygWR',
       name: 'Page2',
       component: Page2
     },
     {
-      path: '/3',
+      path: '/KOqB9y',
       name: 'Page3',
       component: Page3
     },
     {
-      path: '/4',
+      path: '/iPFmMS',
       name: 'Page4',
       component: Page4
     },
     {
-      path: '/5',
+      path: '/GvTiWl',
       name: 'Page5',
       component: Page5
     },
     {
-      path: '/6',
+      path: '/aYuon8',
       name: 'Goal',
       component: Goal
     }
