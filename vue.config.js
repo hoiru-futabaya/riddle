@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: './',
+    publicPath: '/riddle/',
     outputDir: './docs', //これ
   }
