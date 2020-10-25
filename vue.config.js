@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: './',
+    publicPath: './riddle',
     outputDir: 'docs/', //これ
     filenameHashing: false,
     productionSourceMap: false
