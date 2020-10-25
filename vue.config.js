@@ -1,6 +1,4 @@
 module.exports = {
     publicPath: './',
-    outputDir: 'docs/', //これ
-    filenameHashing: false,
-    productionSourceMap: false
+    outputDir: './docs', //これ
   }
