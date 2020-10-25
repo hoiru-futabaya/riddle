@@ -41,6 +41,7 @@ export default {
           var result = JSON.stringify(response.data[this.questionNo].answer)
           this.result = result.replace(/"/g, '')
           if (this.answer === this.result) {
+            alert(this.q_id[Number(this.questionNo) + 1])
             location.href = this.q_id[Number(this.questionNo) + 1]
             if (this.kokomade < Number(this.questionNo)) {
               this.$cookies.set('kokomade', Number(this.questionNo))
