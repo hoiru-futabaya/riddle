@@ -5,7 +5,7 @@
         <p id="text">半角英数小文字で入力</p>
         <input class="input" id="answer">
         <input @click="getAnswer" type="button" value="enter">
-        <p v-if="answer === result">Success!</p>
+        <p v-if="answer === result"></p>
         <p v-else-if="answer === ' '"></p>
         <p v-else>Failed...</p>
       </div>
@@ -41,7 +41,7 @@ export default {
           var result = JSON.stringify(response.data[this.questionNo].answer)
           this.result = result.replace(/"/g, '')
           if (this.answer === this.result) {
-            alert(this.q_id[Number(this.questionNo) + 1])
+            alert('Success!!')
             location.href = this.q_id[Number(this.questionNo) + 1]
             if (this.kokomade < Number(this.questionNo)) {
               this.$cookies.set('kokomade', Number(this.questionNo))

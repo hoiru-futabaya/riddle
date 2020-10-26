@@ -22,32 +22,32 @@ export default new Router({
     },
     {
       path: '/teOr2X',
-      name: 'Page1',
+      name: 'teOr2X',
       component: Page1
     },
     {
       path: '/CRygWR',
-      name: 'Page2',
+      name: 'CRygWR',
       component: Page2
     },
     {
       path: '/KOqB9y',
-      name: 'Page3',
+      name: 'KOqB9y',
       component: Page3
     },
     {
       path: '/iPFmMS',
-      name: 'Page4',
+      name: 'iPFmMS',
       component: Page4
     },
     {
       path: '/GvTiWl',
-      name: 'Page5',
+      name: 'GvTiWl',
       component: Page5
     },
     {
       path: '/aYuon8',
-      name: 'Goal',
+      name: 'aYuon8',
       component: Goal
     }
   ]
