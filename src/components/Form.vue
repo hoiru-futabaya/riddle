@@ -10,11 +10,17 @@
         <p v-else>Failed...</p>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from './Footer.vue'
+
 export default {
+  components: {
+    Footer
+  },
   name: 'AnswerForm',
   data () {
     return {
