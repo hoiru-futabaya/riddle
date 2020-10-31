@@ -21,32 +21,32 @@ export default new Router({
       component: Main // このコンポーネントを呼ぶ
     },
     {
-      path: '/teOr2X',
+      path: '/teOr2X/',
       name: 'teOr2X',
       component: Page1
     },
     {
-      path: '/CRygWR',
+      path: '/CRygWR/',
       name: 'CRygWR',
       component: Page2
     },
     {
-      path: '/KOqB9y',
+      path: '/KOqB9y/',
       name: 'KOqB9y',
       component: Page3
     },
     {
-      path: '/iPFmMS',
+      path: '/iPFmMS/',
       name: 'iPFmMS',
       component: Page4
     },
     {
-      path: '/GvTiWl',
+      path: '/GvTiWl/',
       name: 'GvTiWl',
       component: Page5
     },
     {
-      path: '/aYuon8',
+      path: '/aYuon8/',
       name: 'aYuon8',
       component: Goal
     }
