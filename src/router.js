@@ -21,7 +21,7 @@ export default new Router({
       component: Main // このコンポーネントを呼ぶ
     },
     {
-      path: '/teOr2X/',
+      path: '/teOr2X*',
       name: 'teOr2X',
       component: Page1
     },
