@@ -42,6 +42,7 @@ export default {
           this.result = result.replace(/"/g, '')
           if (this.answer === this.result) {
             alert('Success!!')
+            document.getElementById('answer').value = ''
             this.$router.push(this.q_id[Number(this.questionNo) + 1])
             if (this.kokomade < Number(this.questionNo)) {
               this.$cookies.set('kokomade', Number(this.questionNo))
