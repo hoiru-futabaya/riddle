@@ -10,7 +10,7 @@
         <p v-else>Failed...</p>
       </div>
     </div>
-    <Footer />
+    <Footer :kokomade="this.$cookies.get('kokomade')" />
   </div>
 </template>
 
