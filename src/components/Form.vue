@@ -3,7 +3,7 @@
     <div>
       <div v-if="this.$route.path !== '/aYuon8'">
         <p id="text">半角英数小文字で入力</p>
-        <input class="input" id="answer">
+        <input class="input" id="answer" @keydown.enter="getAnswer">
         <input @click="getAnswer" type="button" value="enter">
         <p v-if="answer === result"></p>
         <p v-else-if="answer === ' '"></p>
