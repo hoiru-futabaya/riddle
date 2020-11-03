@@ -15,7 +15,7 @@ export default {
   },
   created () {
     axios
-      .get('https://script.google.com/macros/s/AKfycbwMZwR-7TSCJ79fgfc8yiU37at5fpt6wcVDMTI7Weik-bYqxBaH/exec')
+      .get('https://script.google.com/macros/s/AKfycbwMZwR-7TSCJ79fgfc8yiU37at5fpt6wcVDMTI7Weik-bYqxBaH/exec?name=riddle')
       .then(response => (this.count = response.data.count))
   }
 }

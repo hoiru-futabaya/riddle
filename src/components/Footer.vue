@@ -7,10 +7,10 @@
     <router-link to="/iPFmMS" v-if="kokomade >= 3">-4-</router-link>
     <router-link to="/GvTiWl" v-if="kokomade >= 4">-5-</router-link>
     <router-link to="/aYuon8" v-if="kokomade >= 5">-ゴール-</router-link>
-    <!-- 開発用なので以下は公開前に消す -->
+    <!-- 開発用なので以下は公開前に消す
     <h3>現在{{ kokomade }}問目までクリア</h3>
     <input @click="resetCookies" type="button" value="Cookieをリセット">
-    <!-- ここまで -->
+     ここまで -->
   </div>
 </template>
 
