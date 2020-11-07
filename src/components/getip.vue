@@ -1,7 +1,6 @@
 <template>
   <div  id="counter">
 あなたは{{count}}人目の到達者です！<br>
-ip:{{ ipAddress }}
   </div>
 </template>
 
