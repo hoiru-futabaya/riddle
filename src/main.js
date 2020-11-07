@@ -1,3 +1,5 @@
+/* eslint spaced-comment : 0 */
+
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -15,10 +17,10 @@ Vue.$cookies.config('7d')
 Vue.$cookies.set('theme', 'default')
 Vue.$cookies.set('hover-time', '1s')
 
-if (!Vue.$cookies.isKey('kokomade')) {
-  Vue.$cookies.set('kokomade', -1)
-  alert('Cookie初回セット')
-}
+//if (!Vue.$cookies.isKey('kokomade')) {
+//  Vue.$cookies.set('kokomade', -1)
+//  alert('Cookie初回セット')
+//}
 
 new Vue({
   router,
