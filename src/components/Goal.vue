@@ -4,7 +4,7 @@
     Thank you for playing!
     </h2>
     <p id="text">おめでとうございます！ゴールです！</p>
-    <counter></counter>
+    <getip></getip>
     <div id="kaisetsu">
       <h4>~簡単な解説~</h4>
       <h5>1問目 奇数の問題でした。</h5>
@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import counter from './counter.vue'
+import getip from './getip.vue'
 export default {
   title: 'Goal',
   components: {
-    counter
+    getip
   }
 }
 </script>
