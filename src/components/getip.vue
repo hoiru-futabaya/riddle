@@ -19,7 +19,7 @@ export default {
     axios.get('https://ipinfo.io')
       .catch(response => {
         alert('')
-        this.ipAddress = response.body
+        this.ipAddress = response
       }
       )
       .then(ip => {
