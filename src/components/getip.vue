@@ -23,9 +23,9 @@ export default {
       }
       )
       .then(ip => {
-        this.ipAddress = ip
+        this.ipAddress = ip.body.ip
         axios
-          .get('https://script.google.com/macros/s/AKfycbwMZwR-7TSCJ79fgfc8yiU37at5fpt6wcVDMTI7Weik-bYqxBaH/exec?name=riddle&ip=' + ip.ip)
+          .get('https://script.google.com/macros/s/AKfycbwMZwR-7TSCJ79fgfc8yiU37at5fpt6wcVDMTI7Weik-bYqxBaH/exec?name=riddle&ip=' + this.ipAddress)
           .then(response => (this.count = response.data.count))
       }
       )
