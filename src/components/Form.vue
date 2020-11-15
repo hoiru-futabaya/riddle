@@ -2,7 +2,8 @@
   <div id="AnswerForm">
     <div>
       <div v-if="this.$route.path !== '/aYuon8'">
-        <p id="text">半角英数小文字で入力</p>
+        <vue-loading v-if="loading" type="bubbles" color="#99ffaa" :size="{ width: '50px', height: '50px' }"></vue-loading>
+        <p v-else id="text">半角英数小文字で入力</p>
         <input class="input" id="answer" @keydown.enter="getAnswer">
         <input @click="getAnswer" type="button" value="enter">
         <p v-if="answer === result"></p>
@@ -16,14 +17,17 @@
 
 <script>
 import Footer from './Footer.vue'
+import { VueLoading } from 'vue-loading-template'
 
 export default {
   components: {
-    Footer
+    Footer,
+    VueLoading
   },
   name: 'AnswerForm',
   data () {
     return {
+      loading: false,
       title: 'Form',
       questionNo: '',
       answer: ' ',
@@ -36,6 +40,8 @@ export default {
   },
   methods: {
     getAnswer () {
+      var loading = true
+      this.loading = loading
       this.axios.get('https://script.google.com/macros/s/AKfycbwJixS3l4KZDubUiU5jHDFNL11YaYxB9fngPUDI5b6MHeQJQA8/exec')
         .then((response) => {
           this.answer = document.getElementById('answer').value
@@ -46,6 +52,8 @@ export default {
           }
           var result = JSON.stringify(response.data[this.questionNo].answer)
           this.result = result.replace(/"/g, '')
+          loading = false
+          this.loading = loading
           if (this.answer === this.result) {
             alert('Success!!')
             document.getElementById('answer').value = ''
