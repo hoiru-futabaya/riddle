@@ -55,7 +55,6 @@ export default {
           loading = false
           this.loading = loading
           if (this.answer === this.result) {
-            alert('Success!!')
             document.getElementById('answer').value = ''
             this.$router.push(this.q_id[Number(this.questionNo) + 1])
             if (this.kokomade < Number(this.questionNo)) {
