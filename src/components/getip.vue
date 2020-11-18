@@ -1,5 +1,5 @@
 <template>
-  <div  id="counter">
+  <div id="counter">
 あなたは{{count}}人目の到達者です！<br>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
   created () {
     axios.get('https://ipinfo.io')
       .catch(response => {
-        alert('')
+        alert('getip.vue error')
         this.ipAddress = response
       }
       )
