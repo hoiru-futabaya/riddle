@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <h2 id="title">
-    Ｖ<b v-on:click="l = 1">{{ monme[l] }}</b>
+    <b v-on:click="l = 1">{{ monme[l] }}</b>
     </h2>
     <p id="text">Tap or click, and
     you can "<b v-on:click="k = 1">{{ lightup[k] }}</b>".</p>
@@ -25,7 +25,7 @@ export default {
       m: 0,
       o: 0,
       lightup: ['light up', 'らいとあっぷ'],
-      monme: ['問目', 'tuber'],
+      monme: ['Ⅴ問目', 'Vtuber'],
       same: ['覚め', '鮫'],
       meido: ['冥土', 'メイド'],
       kuro: ['苦労', 'クロワッサン']
