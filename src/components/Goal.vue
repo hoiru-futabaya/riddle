@@ -7,6 +7,7 @@
  <getip></getip>
     <div>
       <h4>~簡単な解説~</h4>
+      <vue-loading v-if="loading" type="bubbles" color="#99ffaa" :size="{ width: '50px', height: '50px' }"></vue-loading>
       <h5 v-for="(value, key) in kaisetsu" :key="key">{{ value }}</h5>
     </div>
     <div id="bbs">
@@ -17,24 +18,33 @@
 
 <script>
 import getip from './getip.vue'
+import { VueLoading } from 'vue-loading-template'
 export default {
   title: 'Goal',
   components: {
-    getip
+    getip,
+    VueLoading
   },
   data () {
     return {
-      kaisetsu: [
-        '1問目 奇数の問題でした',
-        '2問目 MonkeyからK（カリウムの元素記号）を……',
-        '3問目 賽は投げられた！FUNNYをシーザー暗号→LATTE',
-        '4問目 キーボードを鍵盤に見立てて楽譜と照合。',
-        '5問目 好きなもの（都々逸と短歌とア・プチちゃん）を詰め込んだ問題でした。'
-      ]
+      kaisetsu: null,
+      loading: true
     }
+  },
+  created () {
+    var loading = true
+    this.loading = loading
+    this.axios.get('https://script.google.com/macros/s/AKfycbwJixS3l4KZDubUiU5jHDFNL11YaYxB9fngPUDI5b6MHeQJQA8/exec')
+      .then((response) => {
+        var kaisetsu = response.data[7].kaisetsu
+        this.kaisetsu = kaisetsu
+        this.loading = false
+      })
+      .catch((e) => {
+        alert('get kaisetsu error')
+      })
   }
 }
 </script>
-
 <style>
 </style>
