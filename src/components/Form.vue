@@ -18,6 +18,7 @@
 <script>
 import Footer from './Footer.vue'
 import { VueLoading } from 'vue-loading-template'
+import { answerFormat } from './answer_format.js'
 
 export default {
   components: {
@@ -44,7 +45,7 @@ export default {
       this.loading = loading
       this.axios.get('https://script.google.com/macros/s/AKfycbwJixS3l4KZDubUiU5jHDFNL11YaYxB9fngPUDI5b6MHeQJQA8/exec')
         .then((response) => {
-          this.answer = document.getElementById('answer').value
+          this.answer = answerFormat(document.getElementById('answer').value)
           if (this.$route.path === '/') {
             this.questionNo = 0
           } else {
