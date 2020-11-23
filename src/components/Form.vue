@@ -1,9 +1,9 @@
 <template>
   <div id="AnswerForm">
     <div>
-      <div v-if="this.$route.path !== '/aYuon8'">
+      <div v-if="this.$route.path !== '/wD4BgH'">
         <vue-loading v-if="loading" type="bubbles" color="#99ffaa" :size="{ width: '50px', height: '50px' }"></vue-loading>
-        <p v-else id="text">半角英数小文字で入力</p>
+        <p v-else id="text">英数字で入力</p>
         <input class="input" id="answer" @keydown.enter="getAnswer">
         <input @click="getAnswer" type="button" value="enter">
         <p v-if="answer === result"></p>
@@ -34,7 +34,7 @@ export default {
       answer: ' ',
       result: '',
       q_id: [
-        '', 'teOr2X', 'CRygWR', 'KOqB9y', 'iPFmMS', 'GvTiWl', 'aYuon8'
+        '', 'teOr2X', 'CRygWR', 'KOqB9y', 'iPFmMS', 'GvTiWl', 'aYuon8', 'wD4BgH'
       ],
       kokomade: Number(this.$cookies.get('kokomade'))
     }

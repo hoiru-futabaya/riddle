@@ -5,13 +5,18 @@
     </h2>
     <p id="text">おめでとうございます！ゴールです！</p>
  <getip></getip>
+    <p><a href="https://9231.teacup.com/hoiru_futabaya/bbs">クリア掲示板</a></p>
+
     <div>
       <h4>~簡単な解説~</h4>
       <vue-loading v-if="loading" type="bubbles" color="#99ffaa" :size="{ width: '50px', height: '50px' }"></vue-loading>
       <h5 v-for="(value, key) in kaisetsu" :key="key">{{ value }}</h5>
     </div>
-    <div id="bbs">
-    <p><a href="https://9231.teacup.com/hoiru_futabaya/bbs">クリア掲示板</a></p>
+    <div id="logo">
+      <p>ロゴリドル：埼玉県のどーこだ？</p>
+      <p>（ヘボン式ローマ字で）</p>
+      <img src="../views/rcclogo.jpg" title="痛たた……座り仕事だから〇〇〇〇ばいよ">
+      <h5>RCCについては<a href="http://rccmembers.web.fc2.com/">こちら</a>(お世話になってます！)</h5>
     </div>
   </div>
 </template>
@@ -47,4 +52,10 @@ export default {
 }
 </script>
 <style>
+img {
+  width: 100px;
+}
+p {
+  margin: 1px;
+}
 </style>
